@@ -18,7 +18,7 @@ function getEmployees(listOfElements) {
   return employees;
 }
 
-function sortEmployees(listOfEmployees) {
+function sortList(listOfEmployees) {
   const items = Array.from(listOfEmployees.children);
 
   items.sort((a, b) => {
@@ -36,5 +36,5 @@ function parseSalary(salaryStr) {
   return Number(salary);
 }
 
-sortEmployees(employeesList);
+sortList(employeesList);
 getEmployees(employeesList);
